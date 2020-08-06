@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 html,
 body {
-  background-image: url("../src/images/background.jpg");
+  background-image: url("./background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -21,11 +21,6 @@ a {
   color: #2c53be;
   text-decoration: none;
 }
-
-/* p,
-a {
-  color: yellow;
-} */
 
 h1,
 h2,
@@ -81,9 +76,10 @@ p {
   padding: 50px;
   margin-bottom: 50px;
   font-size: 50px;
+  letter-spacing: 10px;
   text-align: center;
   -webkit-text-decoration-color: #1e44b4;
-  text-decoration-color: #1e44b4;
+          text-decoration-color: #1e44b4;
   line-height: 1.4;
 }
 
@@ -103,8 +99,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .downloadcv {
@@ -121,7 +117,7 @@ p {
   background-color: #1e44b4;
   letter-spacing: 1.9px;
   -webkit-transition-duration: 0.8s;
-  transition-duration: 0.8s;
+          transition-duration: 0.8s;
   cursor: pointer;
 }
 
@@ -139,8 +135,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 70px;
   font-size: 10px;
   color: white;
@@ -172,7 +168,7 @@ p {
 
 #lab_social_icon_footer .social:hover {
   -webkit-transform: -webkit-transform scale(1.1);
-  transform: -webkit-transform scale(1.1);
+          transform: -webkit-transform scale(1.1);
   transform: -moz-transform scale(1.1);
   transform: -o-transform scale(1.1);
 }
@@ -201,8 +197,8 @@ p {
   }
   .box {
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     font-size: 7px;
     color: yellow;
     padding: 10px;
@@ -210,11 +206,11 @@ p {
   .items {
     display: inline-block;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 75px;
   }
 }
