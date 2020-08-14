@@ -207,8 +207,12 @@ p {
 }
 
 @media only screen and (max-width: 812px) {
-  h1 {
-    font-size: 13px;
+  h2 {
+    display: none;
+  }
+  .primary-text {
+    text-align: center;
+    font-size: 35px;
   }
   .middlebtn {
     font-size: 15px;
@@ -224,21 +228,17 @@ p {
         grid-template-columns: 50px 50px 50px;
     -ms-grid-rows: 50px 50px 50px;
         grid-template-rows: 50px 50px 50px;
-    font-size: 10px;
-    color: white;
   }
   .items {
     display: -ms-grid;
     display: grid;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    grid-gap: 5vh;
-    -ms-grid-columns: 50px 50px 50px;
-        grid-template-columns: 50px 50px 50px;
-    -ms-grid-rows: 50px 50px 50px;
-        grid-template-rows: 50px 50px 50px;
-    font-size: 2px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
   }
   #footer {
     position: static;

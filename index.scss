@@ -187,10 +187,16 @@ p {
 }
 
 @media only screen and (max-width: 812px) {
-  h1 {
-    font-size: 13px;
+
+  h2 {
+   display: none; 
   }
 
+
+  .primary-text{
+    text-align: center;
+    font-size: 35px;
+  }
 
   .middlebtn {
     font-size: 15px;
@@ -202,16 +208,16 @@ p {
     grid-gap: 5vh;
     grid-template-columns: 50px 50px 50px;
     grid-template-rows: 50px 50px 50px;
-    font-size: 10px;
-    color: white;
+    
   }
-   .items {
+
+  .items {
     display: grid;
-    justify-content: space-evenly;
-    grid-gap: 5vh;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px;
-    font-size: 2px;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  width: fit-content;
+  margin: auto;
+    
   }
   #footer {
     position: static;
