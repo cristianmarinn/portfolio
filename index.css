@@ -9,6 +9,7 @@
 html,
 body {
   background-image: url("./background.jpg");
+  height: 100vh;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -33,6 +34,7 @@ p {
   margin: 10px 0;
   color: white;
   text-align: center;
+  font-weight: 600;
 }
 
 #navbar {
@@ -63,6 +65,7 @@ p {
   display: block;
   padding: 20px;
   text-align: center;
+  font-weight: 600;
 }
 
 #navbar ul li a:hover {
@@ -142,24 +145,39 @@ p {
   color: white;
 }
 
-#footer {
-  color: white;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.list {
+  font-weight: 600;
 }
 
 /* Footer */
+#footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  float: left;
+}
+
+#footer p {
+  float: left;
+}
+
 #lab_social_icon_footer {
   padding: 20px;
   background-color: black;
   text-align: center;
   height: 25vh;
-}
-
-#lab_social_icon_footer p {
-  color: white;
-  padding: 20px;
 }
 
 #lab_social_icon_footer a {
@@ -188,30 +206,42 @@ p {
   color: #e7e419;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 812px) {
   h1 {
     font-size: 13px;
   }
   .middlebtn {
     font-size: 15px;
   }
-  .box {
+  #features .box {
+    display: -ms-grid;
+    display: grid;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    font-size: 7px;
-    color: yellow;
-    padding: 10px;
+    grid-gap: 5vh;
+    -ms-grid-columns: 50px 50px 50px;
+        grid-template-columns: 50px 50px 50px;
+    -ms-grid-rows: 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px;
+    font-size: 10px;
+    color: white;
   }
   .items {
-    display: inline-block;
+    display: -ms-grid;
+    display: grid;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 75px;
+    grid-gap: 5vh;
+    -ms-grid-columns: 50px 50px 50px;
+        grid-template-columns: 50px 50px 50px;
+    -ms-grid-rows: 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px;
+    font-size: 2px;
+  }
+  #footer {
+    position: static;
   }
 }
 /*# sourceMappingURL=index.css.map */
