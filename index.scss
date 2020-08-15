@@ -1,3 +1,66 @@
+// /* Loader Section */
+// .loader-bg {
+//   width: 100vw;
+//   height: 100vh;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background: #181818;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: stretch;
+//   justify-content: center;
+//   align-content: center;
+//   z-index: 999999;
+// }
+
+// .flex {
+//   min-height: 60pt;
+// }
+
+// @keyframes loading {
+//   0% {
+//   width: 50pt;
+//   height: 50pt;
+//   margin-top: 0;
+//   }
+//   25% {
+//   height: 4pt;
+//   margin-top: 23pt;
+//   }
+//   50% {
+//   width: 4pt;
+//   }
+//   75% {
+//   width: 50pt;
+//   }
+//   100% {
+//   width: 50pt;
+//   height: 50pt;
+//   margin-top: 0;
+//   }
+// }
+
+// .loader {
+//   width: 50pt;
+//   height: 50pt;
+//   border-radius: 100%;
+//   border: #6767fa 4pt solid;
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-color: transparent;
+//   animation: loading 1s infinite;
+// }
+
+// .load-text {
+//   padding-top: 15px;
+//   text-align: center;
+//   font: 14pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+//   color: lighten(#6767fa, 75%);
+// }
+/* Loader Section */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +71,6 @@
 html,
 body {
   background-image: url("./background.jpg");
-  height: 100vh;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -22,11 +84,18 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3 {
-  padding-bottom: 20px;
+h1 {
+  padding-top: 50px;
   color: white;
+}
+
+h1 .primary-text{
+  padding-top: 20px;
+}
+
+h2,h3 {
+  color: white;
+  font-weight: 600;
 }
 
 p {
@@ -37,23 +106,21 @@ p {
 }
 
 #navbar {
-  background: black;
+    // background-color: rgb(30, 68, 180);
   color: white;
-  overflow: auto;
+  font-weight: 600;
 }
 
 #navbar a {
   color: white;
-}
-
-#navbar h1 {
-  float: left;
-  padding-top: 20px;
+  font-size: 20px;
 }
 
 #navbar ul {
+  display: flex;
+  justify-content: space-evenly;
   list-style: none;
-  float: right;
+  
 }
 
 #navbar ul li {
@@ -62,9 +129,7 @@ p {
 
 #navbar ul li a {
   display: block;
-  padding: 20px;
-  text-align: center;
-  font-weight: 600;
+  padding: 10px;
 }
 
 #navbar ul li a:hover {
@@ -75,7 +140,6 @@ p {
 
 .primary-text {
   font-family: "Courier New", Courier, monospace;
-  padding: 50px;
   margin-bottom: 50px;
   font-size: 50px;
   letter-spacing: 10px;
@@ -86,6 +150,8 @@ p {
 
 .secondary-text {
   text-align: center;
+  font-size: 35px;
+  margin-top: 20px;
 }
 
 .items .item {
@@ -138,9 +204,8 @@ p {
 
 /* Footer */
 #footer .container {
-  display: flex;
   align-items: flex-start;
-  position: sticky;
+  // position: fixed;
 }
 #footer {
   position: fixed;
@@ -188,18 +253,13 @@ p {
 
 @media only screen and (max-width: 812px) {
 
-  h2 {
-   display: none; 
-  }
-
-
   .primary-text{
     text-align: center;
     font-size: 35px;
   }
 
   .middlebtn {
-    font-size: 15px;
+    font-size: 20px;
   }
   
    #features .box {
@@ -219,7 +279,18 @@ p {
   margin: auto;
     
   }
-  #footer {
-    position: static;
+  #footer  {
+  position: relative;    
+  }
+
+  p {
+    margin: 40px;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center; 
+    padding-top: 20px;
+    font-size: 25px;
   }
 }
