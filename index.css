@@ -24,12 +24,8 @@ a {
 }
 
 h1 {
-  padding-top: 50px;
+  padding-top: 30px;
   color: white;
-}
-
-h1 .primary-text {
-  padding-top: 20px;
 }
 
 h2, h3 {
@@ -71,6 +67,7 @@ p {
 #navbar ul li a {
   display: block;
   padding: 10px;
+  letter-spacing: 5px;
 }
 
 #navbar ul li a:hover {

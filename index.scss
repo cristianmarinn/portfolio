@@ -85,13 +85,10 @@ a {
 }
 
 h1 {
-  padding-top: 50px;
+  padding-top: 30px;
   color: white;
 }
 
-h1 .primary-text{
-  padding-top: 20px;
-}
 
 h2,h3 {
   color: white;
@@ -106,7 +103,7 @@ p {
 }
 
 #navbar {
-    // background-color: rgb(30, 68, 180);
+  // background-color: rgb(30, 68, 180);
   color: white;
   font-weight: 600;
 }
@@ -130,6 +127,7 @@ p {
 #navbar ul li a {
   display: block;
   padding: 10px;
+  letter-spacing: 5px;
 }
 
 #navbar ul li a:hover {
@@ -227,7 +225,7 @@ p {
 
   a {
     color: white;
-  }
+  } 
 }
 
 #lab_social_icon_footer .social:hover {
