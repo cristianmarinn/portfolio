@@ -74,7 +74,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   font-family: "Courier New", Courier, monospace;
   line-height: 1.9em;
 }
@@ -290,5 +290,9 @@ p {
     justify-content: center; 
     padding-top: 20px;
     font-size: 25px;
+  }
+  body {
+    height: auto;
+    background-size: cover;
   }
 }
